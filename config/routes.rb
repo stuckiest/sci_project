@@ -1,4 +1,18 @@
 Rails.application.routes.draw do
+ resources :owners
+ resources :projects
+  # get 'project/index'
+
+  # get 'project/show'
+
+  # get 'project/new'
+
+  # get 'owner/index'
+
+  # get 'owner/show'
+
+  # get 'owner/new'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
