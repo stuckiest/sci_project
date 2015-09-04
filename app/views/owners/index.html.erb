@@ -2,9 +2,11 @@
 <p><%= link_to 'New Owner', new_owner_path %></p>
 <% @owners.each do |i| %>
   <h3><%= i.name %></h3>
-  <h3><%= i. %></h3>
+  <h3><%= i.age %></h3>
   <p><%= i.profession %></p>
   <%= link_to 'Show Owner', owner_path(i) %>
+  <%= link_to 'Edit Owner', edit_owner_path(i) %>
+  <%= link_to 'Remove Owner', i, method: :delete %>
 <% end %>
 
 

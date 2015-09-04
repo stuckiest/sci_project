@@ -1,8 +1,11 @@
 Rails.application.routes.draw do
-  root 'static_pages#home'
 
  resources :owners
  resources :projects
+
+
+  root 'static_pages#home'
+  
   # get 'project/index'
 
   # get 'project/show'
