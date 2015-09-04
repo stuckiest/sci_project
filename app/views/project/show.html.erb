@@ -1,2 +1,7 @@
-<h1>Project#show</h1>
-<p>Find me in app/views/project/show.html.erb</p>
+<h3>Project</h3>
+<h3><%= @project.title %></h3>
+<h3><%= @project.grade %></h3>
+<p><%= @project.prize %></p>
+<p><%= @project.notes %></p>
+<p><%= @project.owner_id %></p>
+<%= link_to 'Back', projects_path %>
